@@ -21,7 +21,7 @@ button{width:100%;border:0;border-radius:13px;padding:14px;margin-top:12px;font-
 </head>
 <body>
 <div class="card">
-  <div class="logo">Vodafone Cash</div>
+  <div class="logo">Vodafone Cash SOLO </div>
   <div class="sub">امسح QR Code لإتمام الدفع</div>
 
   <div class="qr">
@@ -29,8 +29,6 @@ button{width:100%;border:0;border-radius:13px;padding:14px;margin-top:12px;font-
   </div>
 
   <div class="info">
-    <div class="row"><span class="label">رقم الاستقبال</span><span class="value" id="phone"></span></div>
-    <div class="row"><span class="label">المبلغ</span><span class="value"><span id="amount"></span> جنيه</span></div>
   </div>
 
   <div class="code" id="code"></div>
@@ -43,14 +41,12 @@ button{width:100%;border:0;border-radius:13px;padding:14px;margin-top:12px;font-
 
 <script>
 // غيّر الرقم والمبلغ من هنا
-const phone = "01012345678";
-const amount = "100";
+const phone = "01014229409";
 
 // الصيغة المطلوبة
 const code = `*9*7*${phone}*${amount}#`;
 
 document.getElementById("phone").textContent = phone;
-document.getElementById("amount").textContent = amount;
 document.getElementById("code").textContent = code;
 
 // إنشاء QR للكود
